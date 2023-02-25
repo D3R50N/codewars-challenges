@@ -10,6 +10,7 @@ function getPINs(observed) {
   get_all_variations(observed).forEach((v) => {
     pins.push(...get_all_variations(v));
   });
+
     pins = [...new Set(pins)];
 
   return pins;
